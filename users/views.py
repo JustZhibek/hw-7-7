@@ -3,7 +3,8 @@ from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.authtoken.models import Token
 from django.contrib.auth import authenticate
-from .serializers import UserLoginValidateSerializer, UserCreateValidateSerializer
+from .serializers import UserLoginValidateSerializer, UserCreateValidateSerializer, \
+    ConfirmUserSerializer
 from django.contrib.auth.models import User
 import random
 from .models import ConfirmUser
